@@ -14,8 +14,8 @@ function App() {
   }
 
   return (
-    <div style={{ maxWidth: 400, margin: "40px auto", fontFamily: "sans-serif" }}>
-      <h2 style={{textAlign: "center"}}>플래시 카드</h2>
+    <div className="App">
+      <h2>플래시 카드</h2>
       <AddCardForm onAdd={addCard} />
       <FlashcardList cards={cards} />
     </div>
