@@ -1,16 +1,17 @@
 body {
-  background: #fafbfc;
+  background: #e6f0ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-  color: #232323;
+  padding: 0;
+  color: #0a1f44;
 }
 
 .App {
   max-width: 430px;
   margin: 40px auto;
-  background: #fff;
+  background: #fafdff;
   border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(30,40,90,0.07);
+  box-shadow: 0 4px 24px rgba(33, 118, 255, 0.07);
   padding: 32px 20px;
   min-height: 520px;
   text-align: center;
@@ -19,8 +20,12 @@ body {
 h2 {
   margin-bottom: 20px;
   font-weight: 700;
-  color: #212121;
-  letter-spacing: -0.5px;
+  color: #2176ff;
+  background: linear-gradient(90deg, #2176ff, #5ec9fa 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  letter-spacing: -1px;
 }
 
 form {
@@ -32,16 +37,23 @@ form {
 input {
   flex: 1;
   padding: 12px;
-  border: 1px solid #e2e6ef;
+  border: 1.5px solid #5ec9fa;
   border-radius: 7px;
-  background: #fafbfc;
+  background: #f3f8fe;
   font-size: 1rem;
-  color: #232323;
+  color: #212a3a;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #2176ff;
+  box-shadow: 0 0 8px #5ec9fa55;
+  outline: none;
 }
 
 button {
   padding: 0 22px;
-  background: #212121;
+  background: #2176ff;
   color: #fff;
   border: none;
   border-radius: 7px;
@@ -52,7 +64,7 @@ button {
 }
 
 button:hover {
-  background: #111;
+  background: #185bcc;
 }
 
 .flashcard-container {
@@ -60,27 +72,27 @@ button:hover {
 }
 
 .flashcard {
-  border: 1.5px solid #ededed;
+  border: 1.7px solid #5ec9fa;
   border-radius: 13px;
-  background: #fcfcfd;
+  background: #f3f8fe;
   padding: 40px 24px 28px 24px;
   min-height: 120px;
   font-size: 1.3rem;
   font-weight: 500;
-  box-shadow: 0 2px 8px rgba(30,40,90,0.06);
+  box-shadow: 0 2px 12px rgba(33, 118, 255, 0.08);
   cursor: pointer;
-  transition: background 0.18s;
+  transition: background 0.18s, box-shadow 0.18s;
   margin-bottom: 8px;
 }
 
 .flashcard.flipped {
-  background: #f5f6fa;
+  background: #e1f0ff;
 }
 
 .flashcard-tip {
   font-size: 0.97rem;
   margin-top: 1.2rem;
-  color: #b2b5ba;
+  color: #69a6e3;
   letter-spacing: -0.05em;
 }
 
@@ -91,5 +103,5 @@ button:hover {
   justify-content: center;
   gap: 16px;
   font-size: 1.07rem;
-  color: #818999;
+  color: #3366bb;
 }
