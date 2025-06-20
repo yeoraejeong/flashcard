@@ -1,38 +1,95 @@
+body {
+  background: #fafbfc;
+  margin: 0;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  color: #232323;
+}
+
 .App {
+  max-width: 430px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(30,40,90,0.07);
+  padding: 32px 20px;
+  min-height: 520px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #212121;
+  letter-spacing: -0.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  margin: 18px 0 30px 0;
   display: flex;
-  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #e2e6ef;
+  border-radius: 7px;
+  background: #fafbfc;
+  font-size: 1rem;
+  color: #232323;
+}
+
+button {
+  padding: 0 22px;
+  background: #212121;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.17s;
+}
+
+button:hover {
+  background: #111;
+}
+
+.flashcard-container {
+  margin: 30px 0 16px 0;
+}
+
+.flashcard {
+  border: 1.5px solid #ededed;
+  border-radius: 13px;
+  background: #fcfcfd;
+  padding: 40px 24px 28px 24px;
+  min-height: 120px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(30,40,90,0.06);
+  cursor: pointer;
+  transition: background 0.18s;
+  margin-bottom: 8px;
+}
+
+.flashcard.flipped {
+  background: #f5f6fa;
+}
+
+.flashcard-tip {
+  font-size: 0.97rem;
+  margin-top: 1.2rem;
+  color: #b2b5ba;
+  letter-spacing: -0.05em;
+}
+
+.card-controls {
+  margin-top: 18px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 16px;
+  font-size: 1.07rem;
+  color: #818999;
 }
